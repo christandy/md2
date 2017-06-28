@@ -854,7 +854,7 @@ export class MdSelect extends _MdSelectMixinBase implements AfterContentInit, On
       if (this._selectionModel.selected.length >= 1) {        
         let selectedOptions: string = '';
         this._selectionModel.selected.forEach(option => {          
-          selectedOptions += `${option.viewValue}, `;          
+          selectedOptions = `${option.viewValue}, `;          
         });        
         this.ariaLabel = `${this.placeholder}; selected options are ${selectedOptions.replace(/, +$/, '')}`; 
        } else {         
